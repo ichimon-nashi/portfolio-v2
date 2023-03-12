@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <title>I'm Eric!</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- font-awesome cdn -->
+    <script src="https://kit.fontawesome.com/226cdf83fc.js" crossorigin="anonymous"></script>
+    <!-- google font(poppins) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- favicon -->
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <div class="container" id="container">
+        <nav>
+            <div class="logo">Eric Han</div>
+            <ul class="nav-items">
+                <li><a href="#" class="nav-link">ABOUT</a></li>
+                <li><a href="#" class="nav-link">SKILLS</a></li>
+                <li><a href="#" class="nav-link">PROJECTS</a></li>
+            </ul>
+            <div class="links">
+            <a href="https://github.com/ichimon-nashi" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/hankengo/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="mailto:hankengo@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </nav>
+
+    <div class="wrapper">
+        <div class="cols col0">
+            <span class="topline">Hello</span>
+            <h1>I'm <span class="multi-text"></span></h1>
+            <p>I'm a flight purser hoping to start fresh as a frontend developer!</p>
+            <p>Let's work together!</p>            
+            <div class="btn">
+                <button><a href="./Eric Han Resume 2023.pdf">Download my CV</a></button>
+                <button><a href="mailto:hankengo@gmail.com">Contact Me</a></button>
+            </div>
+        </div>
+        <div class="cols cols1">
+            <div class="img-box">
+                <img src="./images/brush-stroke.png" id="brush-stroke">
+                <img src="./images/profile-pic.png" id="profile-pic">
+            </div>
+        </div>
+    </div>    
+    </div>
+
+<!-- Appears when "ABOUT" link clicked on -->
+<div id="about" class="aboutWindow">
+    <h2>About Me</h2>
+    <p>Hi! I'm Chien-Hao Han, or simply known as Eric!</p>
+    <p>I'm a Taiwanese third culture kid born and raised in Indonesia with an American international school education, so I accept and get along great with people of all genders, race and culture!</p>
+    <p>I'm a fast learner, curious and eager to learn! I love applying what I've learnt to create all sorts of things!</p>
+    <button class="closebtn" onclick="closePopUp()">Close</button>
+</div>
+
+<!-- Appears when "SKILLS" link clicked on -->
+<div id="skills" class="skillWindow">
+    <h2>Skills</h2>
+    <div class="skill-grid-container">
+        <p>Natural Languages</p>
+        <hr>
+        <div class="skill-grid-item lang">
+            <img src="./images/icons/united-states.png">
+            <img src="./images/icons/taiwan.png">
+            <img src="./images/icons/japan.png">
+        </div> 
+        
+        <p>Programming Languages</p>
+        <hr>
+        <div class="skill-grid-item">
+            <img src="./images/icons/html-5.png">
+            <img src="./images/icons/css-3.png">
+            <img src="./images/icons/js.png">
+            <img src="./images/icons/bootstrap.png">
+            <img src="./images/icons/react.png">
+            <img src="./images/icons/python.png">
+        </div>
+    </div>
+    <button class="closebtn" onclick="closePopUp()">Close</button>
+</div>
+
+<!-- Appears when "PROJECTS" link clicked on -->
+<div id="projects" class="projectWindow">
+    <h2>Some things I've worked on</h2>
+    <div class="grid-container">
+        <div class="grid-item">
+            <a href="https://ichimon-nashi.github.io/virtual-piano/"><img src="./images/virtualpiano_thumbnail.jpg"></a>
+            <p class="caption">Virtual Piano</p>
+        </div>
+
+        <div class="grid-item">
+            <a href="https://ichimon-nashi.github.io/react-namecard/"><img src="./images/namecard_thumbnail.jpg"></a>
+            <p class="caption">Digital Namecard created using React</p>
+        </div>
+        
+        <div class="grid-item">
+            <a href="https://ichimon-nashi.github.io/react-travel-journal/"><img src="./images/traveljournal_thumbnail.jpg"></a>
+            <p class="caption">Travel Journal created using React</p>
+        </div>
+
+        <div class="grid-item">
+            <a href="https://ichimon-nashi.github.io/lifevest-product/"><img src="./images/lifevest_thumbnail.jpg"></a>
+            <p class="caption">Company Lifevest Product Landing page</p>
+        </div>
+
+        <div class="grid-item">
+            <a href="https://github.com/ichimon-nashi/Python-crew-ft"><img src="./images/crewft_thumbnail.jpg"></a>
+            <p class="caption">Crew Flight Hour Monitor Webscraper created using Python</p>
+        </div>
+    </div>
+    <button class="closebtn" onclick="closePopUp()">Close</button>
+</div>
+
+
+<!-- mattboldt's typed.js script for typing effect -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>    
+<script>
+    var typed = new Typed('.multi-text', {
+        strings: ["Eric", "a purser", "a coder"],
+        loop: true,
+        typeSpeed: 100,
+        backSpeed: 80,
+        backDelay: 1500
+    });
+</script>
+<script src="index.js"></script>
+</body>
+</html>
